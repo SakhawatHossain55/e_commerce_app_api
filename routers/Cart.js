@@ -1,5 +1,9 @@
 const Cart = require("../models/Cart");
-const { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken");
+const {
+  verifyToken,
+  verifyTokenAndAuthorization,
+  verifyTokenAndAdmin,
+} = require("./verifyToken");
 
 const router = require("express").Router();
 
@@ -52,7 +56,7 @@ router.get("/find/:userId", verifyTokenAndAuthorization, async (req, res) => {
   }
 });
 
-//GET ALL
+// //GET ALL
 
 router.get("/", verifyTokenAndAdmin, async (req, res) => {
   try {
