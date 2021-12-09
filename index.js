@@ -5,8 +5,8 @@ const dotenv = require("dotenv");
 const userRoute = require("./routers/user");
 const authRoute = require("./routers/auth");
 const productRoute = require("./routers/Product");
-const cartRoute = require("./routers/cart");
-const orderRoute = require("./routers/order");
+const cartRoute = require("./routers/Cart");
+const orderRoute = require("./routers/Order");
 const stripeRoute = require("./routers/stripe");
 const cors = require("cors");
 
